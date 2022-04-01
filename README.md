@@ -3,13 +3,61 @@ Per component Power & Temperature Measurement of the OLCF Summit System
 
 # Overview
 
+WIP
+
+
+# Quickstart: Working with the Sample Data
+
+This repository provides minimal example in make use of the dataset.
+Sample datasets can be downloaded in the `./data` directory where `parquet`
+files are `.gitinore`'d.  Make directives for a local jupyterlab instance to
+run and test the examples are provided.
+
+## Checkout the code
+
+```shell
+$ git clone git@github.com:at-aaims/summit_power_and_thermal_data.git
+```
+
+## Initialize python environment
+
+The accompanied makefile provides basic convenience macros to initialize the 
+python3 virtual environment that can run the examples.
+
+```shell
+$ make init
+```
+
+## Download the sample datasets into the `./data` directory
+
+TBD: describe how to download the sample dataset from Constellation.
+
+```shell
+$ TBD
+```
+
+## Run jupyterlab
+
+Command below will spawn a jupyterlab instance that can load and run the
+accompanied jupyter notebooks.
+
+```shell
+$ make jupyter
+```
+
+Notebooks in the `./examples` directory is a good starting point for looking
+into the dataset.
+
 
 
 # Repository description
 
+TBD
+
 
 # Dataset Description
 
+WIP
 
 ## Source dataset
 
