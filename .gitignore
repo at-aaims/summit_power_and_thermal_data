@@ -1,6 +1,7 @@
 # Project specific ignores
 /powtemp*
 *.old
+/venv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
