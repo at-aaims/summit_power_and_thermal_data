@@ -89,6 +89,12 @@ Below are sampled datasets extracted from the primary datasets for convenience.
 
 Below describes the common column names within the dataset.
 
+## Summit architecture
+
+![Summit Architecture](./img/architecture_wide_tall.svg "Logo Title Text 1")
+
+This dataset from the Summit system in the image above.
+
 ## metadata
 
 * `timestamp`: Timestamp of the row
