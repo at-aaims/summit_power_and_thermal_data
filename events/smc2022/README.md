@@ -1,3 +1,8 @@
+# HPC Power and Thermal Characteristics in the Wild
+
+#### Woong Shin, J. Austin Ellis, Ahmad Maroof Karimi, Vladyslav Oles, Sajal Dash, and Feiyi Wang <br> Oak Ridge National Laboratory, 1 Bethel Valley Road, Oak Ridge, TN 37830 USA <br>*[shinw, ellisja, karimiahmad, olesv, dashs, fwang2]@ornl.gov*
+
+
 # Abstract
 
 In this data challenge, we aim to understand the long-term power \& thermal trends of a 200PF pre-exascale supercomputer at the Oak Ridge Leadership Computing Facility (OLCF), Summit.  Contenders will work on a sampled subset of the high-resolution per-component (GPUs, CPUs) power consumption and thermal measurements from the system and address the provided data challenges that will encourage the development of novel insights and techniques that can potentially help HPC system operations. 
@@ -17,11 +22,14 @@ To this end, the OLCF has performed an initial overview analysis [1] and is now 
 
 ## 2.1 Acquisition
 
-The dataset for this challenge was collected from the Summit HPC data center which includes power and energy data sensors. In particular, we have leveraged an out-of-band telemetry stream, accumulating data for during portions of years 2020, 2021, and 2022 at a 1Hz sampling rate from all 4,626 nodes, 100 metrics per node that cover the power and temperature of individual components within each node. The collected dataset is expected to enable the data scientist and engineers to deeply characterize the tendencies of Summit’s power behavior and reveal its short-term and long-term impact on the HPC data center. Due to the extreme size of the data and considering the availability of limited time and resources we publish only a sample of the full dataset. However, we share the description of the fields in the datasets in the following section.  
+The dataset for this challenge was collected from the Summit HPC data center which includes power and energy data sensors. In particular, we have leveraged an out-of-band telemetry stream, accumulating data for during portions of years 2020, 2021, and 2022 at a 1Hz sampling rate from all 4,626 nodes, 100 metrics per node that cover the power and temperature of individual components within each node. The collected dataset is expected to enable the data scientist and engineers to deeply characterize the tendencies of Summit’s power behavior and reveal its short-term and long-term impact on the HPC data center. Due to the extreme size of the data and considering the availability of limited time and resources we publish only a sample of the full dataset. However, we share the description of the fields in the datasets in the following section. 
+
+Dataset: `https://doi.ccs.ornl.gov/ui/doi/380` <br>
+Github: `https://github.com/at-aaims/summit_power_and_thermal_data/tree/main/events/smc2022`
 
 ## 2.2 Characterizations
 
-- Dataset A: The first dataset (*a\_fullperiod\_10sec\_58hosts\_decomp.tar*, *a\_fullperiod\_10sec\_100hosts.tar*) consists of 58 Summit nodes and 100 summit nodes. The datasets contain power and thermal data for each subcomponent (2 CPUs and 6 GPUs) for the months of 202001, 202008, 202102, 202108, and 202201, where the format is *yyyymm*. The data files are in the parquet file format, and each file contains data for a single day, e.g., 20220110.parquet is for January 10, 2022. The size of both directories is about 4.3 GB. 
+- Dataset A: The first dataset (`a_fullperiod_10sec_58hosts_decomp.tar`, `a_fullperiod_10sec_100hosts.tar`) consists of 58 Summit nodes and 100 summit nodes. The datasets contain power and thermal data for each subcomponent (2 CPUs and 6 GPUs) for the months of 202001, 202008, 202102, 202108, and 202201, where the format is `yyyymm`. The data files are in the parquet file format, and each file contains data for a single day, e.g., 20220110.parquet is for January 10, 2022. The size of both directories is about 4.3 GB. 
  
 - Dataset B: The second dataset consists of a uniform random sampling of 3k Summit node snapshots. Each snapshot contains thermal and power averages of 10-second intervals over 1 day, which results in a dataset of 1.1 gigabytes. 
  
@@ -45,7 +53,7 @@ Summit has 4,626 nodes, and each node has two CPUs (IBM Power-9 processors) and 
     3. CPU1 – Temperature readings for CPU1 
     4. GPU3-5 – Temperature readings for the 3 GPUs in socket 2 
  
-![alt text](./figs/architecture_wide_tall.pdf "")
+![Summit_layout](/figs/architecture_wide_tall.pdf "")
 **Fig. 1.** Architectural overview of the Summit system at Oak Ridge Leadership Computing Facility
 
 
@@ -88,6 +96,24 @@ where ΔT is the temperature rise in degrees Celsius, q is the dissipated power 
 - Given (1) and that the cooling system uses a constant mass flow rate, does the power and thermal data support this physics model? If not, what forms of deviation do you observe? Is there a time or spatial dependence on the deviations? Are there modifications to this equation that would improve its accuracy? Can you formulate a purely data-driven model to contrast the physics model?
 
 - Given the node layout diagram in Figure 1(a), can you expand the physics model to the node-level temperature changes (2 CPUs and 6 GPUs vs a single device model) that takes into account the direction and split of the cooling flow? The coolant temperature flowing into the node is roughly 21°C, so what does the model predict the water temperatures to be between each component and at the node exit?
+
+
+# Resources
+
+Helpful resources in understanding and utilizing this data set.
+
+1. Data collection methodology, understanding of the Summit System, and related analysis
+    - [Revealing power, energy and thermal dynamics of a 200PF pre-exascale supercomputer](https://doi.org/10.1145/3458817.3476188): full scale power & thermal analysis with the original dataset, architectural information and details of the data collection methodologies
+    - [Hybrid Approach to HPC Cluster Telemetry and Hardware Log Analytics](https://doi.org/10.1109/HPEC43674.2020.9286239): details of the per-node data collection method provided by IBM.
+2. Cooling system design and architectural information
+    - [Summit and Sierra supercomputer cooling solutions](https://doi.org/10.1147/JRD.2019.2958902): Details of the IBM AC922 cooling design
+    - [Thermal and Mechanical Design of the Fastest Supercomputer of the World in Cognitive Systems: IBM POWER AC 922](https://asmedigitalcollection.asme.org/InterPACK/proceedings/InterPACK2019/59322/V001T02A006/1071715): Another article about the details of the IBM AC922 cooling design
+3. General information about the OLCF Summit Supercomputer
+    - [SUMMIT: Oak Ridge National Laboratory's 200 petaflop supercomputer](https://www.olcf.ornl.gov/olcf-resources/compute-systems/summit/): general information about the Summit supercomputer
+    - [User Guide](https://docs.olcf.ornl.gov/systems/summit_user_guide.html#): general user guide
+    - [Virtual tour for the Summit system](https://www.olcf.ornl.gov/2020/08/10/take-a-virtual-tour-of-ornls-supercomputer-center/): A close-up detailed virtual tour of the Summit compute floor and its central energy plant
+
+
 
 # References
 
