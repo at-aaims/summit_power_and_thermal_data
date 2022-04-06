@@ -1,6 +1,8 @@
 Per component Power & Temperature Measurement of the OLCF Summit System
 =======================================================================
 
+* [Dataset download](https://doi.ccs.ornl.gov/ui/doi/380)
+
 # Overview
 
 As we move into the exascale era, the power and energy footprints of
@@ -389,7 +391,7 @@ For convenience, this dataset includes five sample datasets that are derived fro
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
-    - Number of NaNs: 23487449 which is 1.2% of the dataset
+    - Number of NaNs: 23,487,449 which is 1.2% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -430,7 +432,7 @@ For convenience, this dataset includes five sample datasets that are derived fro
     - `p1_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
-    - Number of NaNs: 53284099 which is 1.5%  of the dataset
+    - Number of NaNs: 53,284,099 which is 1.5%  of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -471,6 +473,7 @@ For convenience, this dataset includes five sample datasets that are derived fro
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 14,203,247 which is 1.7% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 ### Sample: `c_snapshot_1min_24h.tar`
@@ -510,6 +513,7 @@ For convenience, this dataset includes five sample datasets that are derived fro
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 21,190,789 which is 2.3% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -550,6 +554,7 @@ For convenience, this dataset includes five sample datasets that are derived fro
     - `p1_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 136,593,944 which is 5.5% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 # Resources
