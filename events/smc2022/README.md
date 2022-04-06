@@ -24,8 +24,9 @@ To this end, the OLCF has performed an initial overview analysis [1] and is now 
 
 The dataset for this challenge was collected from the Summit HPC data center which includes power and energy data sensors. In particular, we have leveraged an out-of-band telemetry stream, accumulating data for during portions of years 2020, 2021, and 2022 at a 1Hz sampling rate from all 4,626 nodes, 100 metrics per node that cover the power and temperature of individual components within each node. The collected dataset is expected to enable the data scientist and engineers to deeply characterize the tendencies of Summit’s power behavior and reveal its short-term and long-term impact on the HPC data center. Due to the extreme size of the data and considering the availability of limited time and resources we publish only a sample of the full dataset. However, we share the description of the fields in the datasets in the following section. 
 
-Dataset: `https://doi.ccs.ornl.gov/ui/doi/380` <br>
-Github: `https://github.com/at-aaims/summit_power_and_thermal_data/tree/main/events/smc2022`
+SMC2022 Github Page: [`https://github.com/at-aaims/summit_power_and_thermal_data/tree/main/events/smc2022`](https://github.com/at-aaims/summit_power_and_thermal_data/tree/main/events/smc2022) <br>
+Dataset Download (DOI): [`https://doi.ccs.ornl.gov/ui/doi/380`](https://doi.ccs.ornl.gov/ui/doi/380) <br>
+Dataset Companion Github [`https://github.com/at-aaims/summit_power_and_thermal_data`](https://github.com/at-aaims/summit_power_and_thermal_data)
 
 ## 2.2 Characterizations
 
