@@ -81,6 +81,9 @@ SHARING/ACCESS INFORMATION
 	Storage and Analysis (SC '21). Association for Computing Machinery, New York, NY,
 	USA, Article 12, 1–14. DOI:https://doi.org/10.1145/3458817.3476188
 
+7. Additional information:
+
+        - [Companion github repository](https://github.com/at-aaims/summit_power_and_thermal_data): additional info, examples, and communication with authors
 
 DATA & FILE OVERVIEW
 
@@ -340,7 +343,7 @@ DATA-SPECIFIC INFORMATION FOR: `a_fullperiod_10sec_58hosts.tar_decomp.tar` (samp
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
-    - Number of NaNs: 23487449 which is 1.2% of the dataset
+    - Number of NaNs: 23,487,449 which is 1.2% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -381,7 +384,7 @@ DATA-SPECIFIC INFORMATION FOR: `a_fullperiod_10sec_100hosts.tar` (sample)
     - `p1_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
-    - Number of NaNs: 53284099 which is 1.5%  of the dataset
+    - Number of NaNs: 53,284,099 which is 1.5%  of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -422,6 +425,7 @@ DATA-SPECIFIC INFORMATION FOR: `b_snapshot_10sec_24h.tar` (sample)
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 14,203,247 which is 1.7% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -462,6 +466,7 @@ DATA-SPECIFIC INFORMATION FOR: `c_snapshot_1min_24h.tar` (sample)
     - `p1_core_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 21,190,789 which is 2.3% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
@@ -502,6 +507,7 @@ DATA-SPECIFIC INFORMATION FOR: `d_snapshot_1min_4626hosts_24h/`
     - `p1_temp_max`
 4. Missing data codes:
     - `NaN`: Fillers for missing data for float32 data types in the Pandas library
+    - Number of NaNs: 136,593,944 which is 5.5% of the dataset
 5. Specialized formats or other abbreviations used: N/A
 
 
