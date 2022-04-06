@@ -53,7 +53,7 @@ Summit has 4,626 nodes, and each node has two CPUs (IBM Power-9 processors) and 
     3. CPU1 – Temperature readings for CPU1 
     4. GPU3-5 – Temperature readings for the 3 GPUs in socket 2 
  
-![Summit_layout](/figs/architecture_wide_tall.pdf "")
+![Summit_arch](./figs/architecture_wide_tall.svg "")
 **Fig. 1.** Architectural overview of the Summit system at Oak Ridge Leadership Computing Facility
 
 
